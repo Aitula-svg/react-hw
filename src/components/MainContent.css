@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.conteiner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+  list-style: none;
+  width: 100%;
+  padding: 10px 20px;
+}
+
+.cart {
+  width: 300px;
+  height: 350px;
+  border: 1px solid rgb(160, 157, 157);
+  
+}
+
+.carton-one {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carton {
+  width: 170px;
+  height: 200px;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+
+p {
+  margin-left: 10px;
+  margin-top: 7px;
+  
+  overflow: hidden;        
+  text-overflow: ellipsis; 
+  white-space: nowrap;     
+  max-width: 100%;
+}
+
+span {
+  margin: 10px;
+
+}
+
+.rating {
+  width: 75px;
+  height: 25px;
+}
+
+.rating-two {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 10px;
+  margin-top: 8px;
+}
+
+.rating-two > p {
+  color: rgb(44, 44, 183);
+}
+
+.button-first {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding-bottom: 10px; */
+  
+}
+
+button {
+  width: 250px;
+  height: 30px;
+  margin-top: 15px;
+  border-radius: 8px;
+  border: 0;
+  background-color: rgb(225, 225, 47);
+  font-weight: 600;
+
+}
+.conteiner{
+  display: flex;
+}
+.buka{
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
