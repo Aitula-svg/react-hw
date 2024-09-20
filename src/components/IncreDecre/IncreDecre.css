@@ -1,0 +1,7 @@
+.plus-minus {
+  display: flex;
+}
+
+.plus-minus > h1 {
+  width: 50px;
+}

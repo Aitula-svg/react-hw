@@ -1,20 +1,24 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import { products } from './data'
-import { MainContent } from './components/MainContent'
-
-
+import { useState } from "react";
+import { Expenses } from "./components/expenses/Expenses";
+import { NewExpense } from "./components/new-expense/NewExpense";
+import { LoginForm } from "./components/auth/LoginForm";
+import IncreDecre from "./components/IncreDecre/IncreDecre";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [expenses, setExpenses] = useState([]);
+
+  const getNewExpenses = (newExpense) => {
+    setExpenses([...expenses,newExpense]);
+  }
 
   return (
-    
-   <MainContent />
-    
-  )
+    <div className="App">
+      <NewExpense onNewExpenses={getNewExpenses} />
+      <Expenses expenses={expenses} />
+      <LoginForm />
+      <IncreDecre />
+    </div>
+  );
 }
 
-export default App
+export default App;
