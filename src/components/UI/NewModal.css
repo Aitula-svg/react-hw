@@ -1,0 +1,48 @@
+ .conteiner-mod {
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 13%;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(10, 164, 12, 0.5);
+    
+
+} 
+
+.modal {
+    border-radius: 10px;
+    padding: 2rem;
+    background-color: white;
+    width: 25rem;
+
+}  
+
+.form-modal {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10px 10px 10px;
+    
+}
+
+.btn {
+    background-color: rgb(88, 129, 219);
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+};
+
+
+
