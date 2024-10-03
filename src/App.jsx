@@ -1,20 +1,30 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import { products } from './data'
-import { MainContent } from './components/MainContent'
+import React from 'react'
+import Todo from './components/Todo'
+import MovieHeader from './components/Movies/MovieHeader'
+import NewMovieHeader from './components/NewMovies/NewMovieHeader'
 
 
 
-function App() {
-  const [count, setCount] = useState(0)
+const App = () => {
+
 
   return (
-    
-   <MainContent />
+    <div className='app-todo' >
+     {/* <Todo /> Тудулист иштейт */}
+     {/* <MovieHeader /> не работает полностью  */}
+<div>
+<NewMovieHeader /> 
+{/* Add new movie басканда ачылып жабылат */ }
+
+</div>
+     
+    </div>
+  
     
   )
 }
 
 export default App
+
+
+
